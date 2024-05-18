@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  IntroArrowDownBox,
   IntroBackground,
   IntroCharBox,
   IntroContainer,
@@ -36,6 +37,15 @@ export const Intro = () => {
           <Image src="/solo.png" alt="right_char" width={500} height={500} />
         </IntroRightCharBox>
       </IntroCharBox>
+      <IntroArrowDownBox>
+        <IntroContent>SCROLL DOWN</IntroContent>
+        <Image
+          src={"/arrow_down_double.svg"}
+          alt={"arrow_down"}
+          width={48}
+          height={48}
+        />
+      </IntroArrowDownBox>
     </IntroContainer>
   );
 };

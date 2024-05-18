@@ -7,6 +7,7 @@ export const IntroContainer = styled.div`
   align-items: flex-start;
   width: 100%;
   height: 800px;
+  overflow: hidden;
 
   background-color: #000;
   color: white;
@@ -80,7 +81,7 @@ export const IntroRightCharBox = styled.div`
   @keyframes upDownRight {
     0%,
     100% {
-      transform: translateY(10px);
+      transform: translateY(-10px);
     }
 
     50% {
@@ -115,3 +116,29 @@ export const IntroContentBox = styled.div`
   }
 `;
 export const IntroContent = styled.span``;
+export const IntroArrowDownBox = styled.div`
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+
+  & img {
+    animation: arrowDown 2s infinite ease-in-out;
+
+    @keyframes arrowDown {
+      0%,
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(15px);
+        opacity: 0;
+      }
+    }
+  }
+`;
