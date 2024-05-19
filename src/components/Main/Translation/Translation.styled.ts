@@ -24,8 +24,6 @@ export const TextImgBox = styled.div`
   height: 232px;
   transform: translate(-50%, -50%);
 
-  cursor: pointer;
-
   img {
     position: absolute;
     top: 0;
@@ -47,4 +45,15 @@ export const Span = styled.span`
   z-index: 1;
   text-align: center;
   white-space: pre-wrap;
+`;
+export const HowToApplyButton = styled.button`
+  position: absolute;
+  right: 32px;
+  bottom: 46px;
+
+  color: #888;
+  background-color: transparent;
+  border: 0;
+  z-index: 2;
+  cursor: pointer;
 `;

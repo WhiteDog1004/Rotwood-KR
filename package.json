@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.2.4",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.10.2",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "throttle-debounce-ts": "^1.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   FlittImgBox,
+  HowToApplyButton,
   Span,
   TextImgBox,
   TranslationContainer,
@@ -19,6 +20,7 @@ export const Translation = () => {
           <br />
           어떻게 하는거지?
         </Span>
+        <HowToApplyButton>적용하는 방법이 궁금하다면?</HowToApplyButton>
       </TextImgBox>
     </TranslationContainer>
   );
