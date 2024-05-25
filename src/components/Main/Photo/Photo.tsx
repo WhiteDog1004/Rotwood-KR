@@ -5,9 +5,13 @@ import { throttle } from "throttle-debounce-ts";
 import {
   Carousel,
   CarouselSlide,
+  MonsterWrapper,
   PhotoContainer,
   PhotoSection,
+  SlowpokeImgBox,
   StickyBox,
+  StickyTitle,
+  SwarmyImgBox,
 } from "./Photo.styled";
 
 function useElementViewportPosition(ref: React.RefObject<HTMLElement>) {
@@ -69,13 +73,22 @@ export const Photo = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const data = ["/Flitt3.png", "/Flitt4.png", "/Flitt3.png", "/Flitt4.png"];
+  const data = [
+    "/rotwood_kr_01.png",
+    "/rotwood_kr_02.png",
+    "/rotwood_kr_03.png",
+    "/rotwood_kr_04.png",
+  ];
 
   return (
     <PhotoContainer>
       <PhotoSection ref={ref}>
-        <div className="container" style={{ height: "200vh" }}>
+        <div
+          className="container"
+          style={{ position: "relative", height: "200vh" }}
+        >
           <StickyBox>
+            <StickyTitle>한글 적용 스크린샷</StickyTitle>
             <Carousel
               ref={carouselRef}
               style={{ x, paddingLeft: "20%", paddingRight: "20%" }}
@@ -87,6 +100,15 @@ export const Photo = () => {
               ))}
             </Carousel>
           </StickyBox>
+
+          <MonsterWrapper>
+            <SlowpokeImgBox>
+              <Image src={"/slowpoke.png"} alt="swarmy" fill />
+            </SlowpokeImgBox>
+            <SwarmyImgBox>
+              <Image src={"/swarmy.png"} alt="swarmy" fill />
+            </SwarmyImgBox>
+          </MonsterWrapper>
         </div>
       </PhotoSection>
     </PhotoContainer>
