@@ -14,6 +14,13 @@ export const FlittImgBox = styled.div`
   width: 400px;
   height: 302px;
   z-index: 1;
+  pointer-events: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 export const TextImgBox = styled.div`
   position: relative;
@@ -30,7 +37,6 @@ export const TextImgBox = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    transform: scaleX(-1);
   }
 `;
 export const Span = styled.span`
@@ -45,15 +51,44 @@ export const Span = styled.span`
   z-index: 1;
   text-align: center;
   white-space: pre-wrap;
-`;
-export const HowToApplyButton = styled.button`
-  position: absolute;
-  right: 32px;
-  bottom: 46px;
 
-  color: #888;
+  & b {
+    color: #db4455;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+`;
+export const DownloadButton = styled.button`
+  width: max-content;
+  height: max-content;
   background-color: transparent;
+  color: #ffffff;
   border: 0;
-  z-index: 2;
+  font-size: 24px;
+
+  background-image: url("/download_button.png");
+  background-size: 128px 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 10px;
+  padding: 16px;
+  object-fit: cover;
+
   cursor: pointer;
+
+  &:hover {
+    background-image: url("/download_button_hover.png");
+  }
+`;
+export const DownloadDateText = styled.span`
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.3;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
