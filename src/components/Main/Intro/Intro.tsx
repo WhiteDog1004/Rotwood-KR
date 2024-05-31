@@ -27,7 +27,7 @@ export const Intro = () => {
         </IntroContentBox>
       </IntroTitleBox>
       <IntroBackground>
-        <Image src="/title.png" alt="bg_intro" fill priority />
+        <Image src="/title.png" alt="bg_intro" fill />
       </IntroBackground>
       <IntroCharBox>
         <IntroLeftCharBox>
