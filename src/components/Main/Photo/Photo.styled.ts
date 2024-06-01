@@ -64,6 +64,10 @@ export const CarouselSlide = styled(motion.div)`
   border-radius: 16px;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+
   img {
     width: 100%;
     height: 100%;

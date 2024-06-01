@@ -61,6 +61,10 @@ export const AccordionItem = styled(ItemWithChevron)`
       &:hover {
         background-color: #666;
       }
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
     }
 
     &-content {
