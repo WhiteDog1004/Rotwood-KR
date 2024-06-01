@@ -102,6 +102,7 @@ export const AccordionItem = styled(ItemWithChevron)`
 `;
 
 export const ContentText = styled.span`
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 

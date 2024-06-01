@@ -2,10 +2,19 @@ import styled from "styled-components";
 
 export const TranslationContainer = styled.div`
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 500px;
   background-color: #000;
   overflow: hidden;
+`;
+export const TranslationWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  min-height: 500px;
 `;
 export const FlittImgBox = styled.div`
   position: absolute;

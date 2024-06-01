@@ -46,6 +46,7 @@ export const Faq = () => {
           </AccordionItem>
 
           <AccordionItem header="Unable to initialize the game. See에러가 발생해요.">
+            <Image src={"/error.jpg"} alt={"error"} width={386} height={217} />
             <ContentText>
               게임 업데이트 또는 재설치 시, 한글패치 파일이 없어 발생하는
               에러입니다.

@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const IntroContainer = styled.div`
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  height: 800px;
+  height: max-content;
+  min-height: 500px;
   overflow: hidden;
 
   background-color: #000;
@@ -42,8 +44,6 @@ export const IntroBackground = styled.div`
   }
 `;
 export const IntroCharBox = styled.div`
-  position: absolute;
-  bottom: 0;
   display: flex;
   justify-content: space-around;
   gap: 200px;
