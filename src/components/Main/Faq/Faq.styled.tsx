@@ -12,6 +12,10 @@ export const FaqContainer = styled.div`
   background-color: #000;
   overflow: hidden;
   padding: 64px;
+
+  @media (max-width: 768px) {
+    padding: 32px;
+  }
 `;
 
 export const FaqBox = styled.div`

@@ -23,6 +23,10 @@ export const StickyTitle = styled.h1`
   width: 100%;
   text-align: center;
   color: #fff;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 export const MonsterWrapper = styled.div`
   width: 100%;
