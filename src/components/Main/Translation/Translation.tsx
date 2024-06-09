@@ -38,7 +38,7 @@ export const Translation = () => {
               }}
             >
               <Link
-                href="/files/data_scripts.zip"
+                href="https://drive.google.com/file/d/1aj7vMl1C_6XvJZmpe6pzWJ5ePWhQyLxs/view?usp=sharing"
                 target="_blank"
                 download
                 style={{ width: "max-content" }}
