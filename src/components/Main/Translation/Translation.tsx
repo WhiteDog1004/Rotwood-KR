@@ -46,7 +46,7 @@ export const Translation = () => {
                 <DownloadButton>다운로드</DownloadButton>
               </Link>
               <DownloadDateText>
-                최신 한글패치 업데이트 24/05/26
+                최신 한글패치 업데이트 24/06/09
               </DownloadDateText>
             </div>
           </Span>
